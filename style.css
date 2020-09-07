@@ -1,0 +1,137 @@
+body{
+  text-align: center;
+}
+
+/* ////////////////// title and heading //////////////// */
+
+#title{
+  background-color: tomato;
+  text-align: left;
+padding: 3% 15% 7% ;
+}
+
+.big-heading{
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-family: 'Righteous', cursive;
+  color: white;
+}
+.title-image{
+  width: 300px;
+padding-top: 20px;
+/*  transform: rotate(25deg);*/
+  /* position: absolute; */
+  margin-left:100px;
+}
+
+.aboutus{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+/* ///////////////NAVBAR/////////////////////// */
+
+.navbar-brand{
+  font-size: 3rem ;
+  font-family: 'Orbitron', sans-serif;
+  width: 100px;
+padding-top: 20px;
+
+}
+
+.navbar{
+  padding-bottom: 4rem;
+}
+
+.nav-item{
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.dtl{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.details{
+padding: 3% 10%;
+background-color: orange;
+}
+
+/* ////////////////// pricing /////////////// */
+
+#pricing{
+  padding: 100px;
+  background-color: #52575d;
+}
+.card{
+margin: 50px;
+  padding: 3% 2%;
+
+}
+
+/* /////////////////// Testimonial section ////////////////// */
+#testimonials{
+
+
+  background-color: #888888;
+  color: #fff;
+
+}
+.testimonial-image{
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+
+
+
+
+
+/* //////////////ORDER AND FOOTER SECTION///////////// */
+
+#cta{
+  background-color: black;
+}
+
+#footer{
+  background-color: #fff;
+
+}
+
+.h3f{
+color: white;
+  padding: 3% 20%;
+}
+
+.naav{
+  background-color: black;
+  width:100%;
+}
+.b1{
+  margin: 20px;
+}
+
+#footer{
+    padding: 4% 0;
+    font-size: 1.5rem;
+    background-color:silver ;
+    text-align: center;
+    text-decoration:none;
+
+}
+
+.bottom-icon{
+  padding: 1% 1%;
+  text-decoration: none;
+
+}
+/*media queries for websites*/
+@media screen and (min-width: 600px) {
+    .title-image{
+		text-align: center;
+
+	}

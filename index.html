@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FEI</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- ////////// NAV-BAR ////////////// -->
+  <section id="title">
+
+    <div class="container-fluid">
+
+<div class="naav">
+      <nav class="navbar  navbar-expand-lg navbar-dark ">
+
+        <img class="navbar-brand" src="data:image/png;base64,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"alt="web-img">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about us">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#minigallery">Mini Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ourevents">Our Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">contact us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+  <!--//////////////////////////////////////////////////////////////////////////// -->
+  <section id="about">
+      <div class="row">
+        <div class="col-lg-6 ">
+          <h1 class="big-heading">Welcome To FEI Group Of Companies</h1>
+
+          <button type="button" class="btn btn-outline-secondary btn-lg" name="button"><i class="fas fa-id-card">  <a  href="#footer"> Contact us</a></i> </button>
+          <button type="button" class="btn btn-outline-secondary btn-lg" name="button"><i class="fas fa-id-card"></i> web site</button>
+        </div>
+        <div class="row">
+        <div class="col-lg-6 ">
+          <img class="title-image" src="https://industrywired.com/wp-content/uploads/2020/03/Here_are-Top-10-Emerging-Technologies-Worth-Investing-in-for-2020.jpeg" alt="web-img">
+
+        </div>
+      </div>
+    </div>
+
+
+</div>
+  </section>
+
+ <!-- /////////////////////////// HIGHLIGHTS ///////////////////////////// -->
+ <section id="about us">
+<div class="aboutus">
+           <h1 >About Us</h1>
+      <p> The FEI Group of companies is an startup that deals in technology and contributes in educational platforms. FEI ChargeGo is an industrial company that deals in the manufacturing of electric vehicles charging stations, smartphone fast chargers. It aimed at developing an electric vehicle fast charger that is important to either an owners of vehicles or manufacturers. The charging infrastructure necessary to stimulate widespread adoption of increasingly available EV's in the marketplace remains to be built. the billion dollar question today is: How can companies package a commercially viable proposition and differentiate themselves in a non-existent,yet crowded marketplace.? worldwidewe have identified 143 companies that have staked a claim to the emerging EV charging infrastructure, but despite all their ingenuity and activity, the shape of the value chain is still unclear. The role of charging infrastructure evolves from being an awareness tool to becoming a commercially viable business venture.  </p> <br>
+<p>
+Charging infrastructure sphere
+
+A supplier of charging infrastructure hardware.
+Installation and maintenance services to charging network owners.
+A manager of the charging infrastructure on behalf of potential network owners.
+An agent that integrates smart grid solution for utilities with charging infrastructure management.
+A provider of services ranging from charging infrastructure management to supporting EV manufacturers as well as customers.</p>
+</div>
+   </section>
+
+  <!-- /////////////////////////// HIGHLIGHTS ///////////////////////////// -->
+<section id="minigallery">
+</section>
+<!-- /////////////////////////// HIGHLIGHTS ///////////////////////////// -->
+<!-- /////////////////////////// HIGHLIGHTS ///////////////////////////// -->
+
+  <div class="details">
+    <h1 class="dtl">Our Designs Highlets</h1>
+
+    <div class="row">
+      <div class="col-4">
+        <i class="fas fa-3x fa-laptop"></i><br>
+        Responsive
+      </div>
+
+      <div class="col-4">
+        <i class="fas fa-3x fa-users"></i> <br>
+        User Friendly
+      </div>
+      <div class="col-4">
+        <i class="fas fa-3x fa-rupee-sign"></i> <br>
+        Within budget
+      </div>
+
+    </div>
+  </div>
+
+    <!-- /////////////////////////// PRICING / VARIANTS SECTION ////////////////////////// -->
+
+  <section id="pricing">
+
+
+
+<h1 style="color: white;">Our variants are: </h1>
+
+    <div class="row">
+
+
+    <div class="card text-white bg-secondary mb-3" style="max-width: 21rem;">
+      <div class="card-header">Basic</div>
+      <div class="card-body">
+        <h5 class="card-title">Web Page</h5>
+        <p class="card-text">We Create a basic web Page For Your Bussiness</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3" style="max-width: 21rem;">
+      <div class="card-header">Advanced</div>
+      <div class="card-body">
+        <h5 class="card-title">Website</h5>
+        <p class="card-text">we create a full website For you.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div><div class="card text-white bg-secondary mb-3" style="max-width: 21rem;">
+      <div class="card-header">Premium</div>
+      <div class="card-body">
+        <h5 class="card-title">with Data Base</h5>
+        <p class="card-text">We create a full Website along With front End and Backend.</p>
+         <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+</div>
+  </section>
+
+<!-- ////////////////////////////////carousel ///////////////////////////// -->
+
+  <section id="testimonials">
+
+       <div id="Testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>WOW Thank You For this Best Website for My Bussiness.</h2>
+            <img class="testimonial-image" src="https://www.pngrepo.com/download/89241/customer-testimonial.png" alt="male-profile">
+            <em>Pavansai, Nuzivi</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text"> I am so happy Thank You For Building My portfollio.</h2>
+            <img class="testimonial-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQC68UVhtKXIxG4CuFOv6KUurHZBMQYxUna-Q&usqp=CAU" alt="lady-profile">
+            <em>Suri,  Vijayawada </em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">Thank you with this website i can get my orders directly thank you so much. I am so happy.</h2>
+            <img class="testimonial-image" src="https://static.thenounproject.com/png/17239-200.png" alt="lady-profile">
+            <em>Kamakshi, RJY</em>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#Testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>  </a>
+
+        <a class="carousel-control-next" href="#Testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span></a>
+
+        </div>
+
+
+
+
+        </section>
+
+
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+   <h3 class="h3f">Give Us Order Today.</h3>
+   <button type="button" class="btn b1 btn-dark btn-lg download-button"><i class="fas fa-shopping-cart"></i>contact</button>
+   <!--<button type="button" class="btn b1 btn-outline-light btn-lg download-button"><i class="far fa-bookmark"></i> Book for later</button> -->
+ </section>
+<!-- Footer -->
+
+   <footer id="footer">
+			     <a href="https://www.facebook.com/FEI-Tech-Pvt-Ltd-106751494288114/?ref=py_c"><i class="fab bottom-icon fa-facebook"></i> </a>
+        	 <a href="https://www.instagram.com/_fei_tech/"><i class="fab bottom-icon fa-instagram"></i> </a>
+           <a href=""><i class="fab bottom-icon fa-twitter-square"></i> </a>
+           <a href="https://www.youtube.com/watch?v=xtOR6w-MCyM"><i class="fab bottom-icon fa-youtube"></i></a>
+           <a href="https://www.linkedin.com/in/fei-tech-5a51261aa/"><i class="fab bottom-icon fa-linkedin"></i></a>
+     <p>All Rights Reserved © 2020 FEI techpvtltd</p>
+   </footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
